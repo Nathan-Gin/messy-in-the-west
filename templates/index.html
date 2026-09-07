@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messy in the West</title>
+</head>
+<body>
+    <h1>Messy in the West</h1>
+    {%if g.user%}
+    <p>Welcome: {{g.user}}</p>
+    <a href="{{url_for('logout')}}">Logout?</a>
+    {% else%}
+    <a href="{{url_for('login')}}">Login?</a>
+    {%endif%}
+    <a href="{{url_for('register')}}">Register</a>
+    <br/>
+    <h2><a href="{{url_for('game')}}">PLAY !</a></h2>
+    <br/>
+    <h3><a href="{{url_for('leaderboard')}}">Leaderboard</a></h3>
+
+    <section id="Controls">
+        <h1>Controls</h1>
+        <table>
+            <tr>
+                <th scope="col">Key</th>
+                <th scope="col">Action</th>
+            </tr>
+            <tr>
+                <td>Arrow Keys</td>
+                <td>Movement</td>
+            </tr>
+            <tr>
+                <td>W</td>
+                <td>Shoot Up</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Shoot Left</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>Shoot Down</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Shoot Right</td>
+            </tr>
+            <tr>
+                <td>SpaceBar</td>
+                <td>Dodge</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>Reload</td>
+            </tr>
+        </table>
+        <h1>Cheats</h1>
+        <table>
+            <tr>
+                <th scope="col">Key</th>
+                <th scope="col">Cheat</th>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>Godmode</td>
+            </tr>
+            <tr>
+                <td>U</td>
+                <td>Unlimited Bullets</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="description">
+        <p>This game is a western shooter, become a cowboy with a 6 shot revolver (be aware of your reload time!) and save your town, pick up power ups like healing (small and large), super speed and unlimited bullets, dont forget to dodge forward in a sticky situation and make use of the invincible frames but remember they're is a cooldown!</p>
+        <p>This game consits of 4 stages, 3 which take place in the first map and you progress to a 4th boss level once complete</p>
+        <p>Each enemy has unique ai and attack patters</p>
+        <p>Blind Cactus: The blind cactus moves randomly in one direction and occasionly changes direction, however if he sees you in his line of sight(in front of him whichever way hes moving), he will shoot at you!</p>
+        <p>Haunted Coffin: The coffin chases directly after the player holding some grudge, if he comes face to face with the player he will swing his shovel to attack the player, run away and avoid the shovel!</p>
+        <p>Scared Coyote: The scared coyote runs away from the player and fires 3 homing missiles at a random time set for each coyote, chase after him as those homing missiles are pesky and hes quite beefy in health </p>
+        <p>Agis: The boss, having 2 attacks one that accelerates rapidly in the rough direction of the player and another that produces multiple bouncing projectiles, ensure to use your dodge wisely and items in the arena too!</p>
+        <p>Random items are randomly dropped from enemies be sure to pick them up and use them</p> 
+    </section>
+    
+</body>
+</html>
