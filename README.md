@@ -145,6 +145,7 @@ Potential improvements include:
 - Additional weapons and gameplay mechanics
 - Improved browser compatibility
 - Further separation and organisation of game systems
+- Improved sprite collisions with environment
 
 ## Author
 
