@@ -4,6 +4,16 @@ Messy in the West is a top-down, tile-based western shooter game built using Jav
 
 The project combines a browser-based game with a Flask backend and SQLite database to provide user accounts and a leaderboard system.
 
+## Screenshots
+
+### Main area
+
+![Single Route](screenshots/main-area.png)
+
+### Boss Area
+
+![Boss Area](screenshots/boss-area.png)
+
 ## Features
 
 - Top-down tile-based shooter
